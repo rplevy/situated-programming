@@ -1,0 +1,829 @@
+<html>
+<head>
+<style>
+div.page {
+  width:800px;
+  height:800px;
+  border-style: solid;
+  padding: 8px;
+  margin-top: 40px;
+  page-break-before: always;
+  page-break-after: always;
+  overflow: scroll;
+}
+td {
+  width: 700px;
+  height: 100px;
+  font-size: 8pt;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+span.endnote {
+  font-size: 8pt;
+}
+</style>
+
+<title>Steps to an Ecology of Bicycles for the Mind</title>
+</head>
+<body>
+
+<img src="assets/steps-to.png"
+     style="height: 816px; width=816px; border-style: solid;">
+
+<a name="title"></a>
+<div class="page">
+<br>
+<br>
+<h1>STEPS TO AN ECOLOGY OF<br>BICYCLES FOR THE MIND</h1>
+<h3>A SITUATED PROGRAMMING MANIFESTO</h3>
+
+<div style="margin-top:500px;"></div>
+
+<p>Robert Levy, April 2018</p>
+<p><a href="https://creativecommons.org/licenses/by/4.0/">
+Distributed Under License CC BY 4.0
+</a>
+</p>
+<p>
+URL: <a href="http://senters.info/situated-programming"><u>senters.info/situated-programming</u></a>
+</p>
+</div>
+
+<a name="dedication"></a>
+<div class="page">
+
+<div style="height: 40%;">
+</div>
+
+<center>
+Dedicated to Bristy<br>
+my partner in life<br>
+and in joint attention
+</center>
+
+<div style="height: 40%;">
+</div>
+
+<i>Special thanks to Thomas Levy and Tracy Harms who in particular
+have spent countless hours both critically and constructively
+influencing the ideas presented here, and to Michael Travers, Reid
+McKensie, Brian Marick, Panicks Godeck, Simon Belak, Lexi Linnell,
+Zach Tellman, Kovas Boguta, Tianxiang Xiong, Brian Rice, Alyssa Kwan,
+Radford Smith, Max Kreminski, Damien Donnelly, Timothy Washington,
+David Nicol, Mia Lehrer, Alvaro Videla, Alex Hirner, Stephen Cagle,
+Eric Normand, Doug Haber, Rex Parker, Tim Howe and many others!</i>
+
+</div>
+
+<a name="preface"></a>
+<div class="page">
+
+<h3>PREFACE</h3>
+
+<p>
+In the folklore of computing, the turn of phrase "bicycle for the
+mind"<sup>1</sup> characterizes the aims of intelligence amplification
+(IA) efforts by way of reference to the well-established scientific
+fact that bicycles come astonishingly close to making total use of a
+person's self-generated mechanical power.  A bicycle is the most
+efficient vehicle to harness a human's own power toward locomotive
+objectives.<sup>2</sup> Can computing technology similarly be used to
+maximally leverage human powers of perception/action and narrative
+sense-making?
+</p>
+
+<p>
+The metaphor raises an obvious question: why not an electric bicycle,
+or a self-steering sailboat, or a telepresence drone-- for the mind,
+for that matter?  Power tools of thought are ultimately what we want,
+but there is risk in putting them first.  The bicycle model of
+amplifying human powers highlights the challenge of how to extend
+agency with technologies closely fit to core human competencies and
+needs.  Skipping this necessary first step seems to lead down a path
+of not augmenting human capacities, but instead supplanting them in
+ways that tend to integrate poorly with the actual interests and needs
+of users.  It leads to inscrutable oracles that trade off
+accountability and expertise for short-sighted convenience.
+</p>
+
+<p>
+We do not yet have anything quite analogous to bicycles for the full
+power of the embodied human mind.  But the history of human life has
+been punctuated by the development of new practices and tools for
+scaffolding and extending personhood.  I suppose we could think of
+some of these innovations as wheelbarrows or shovels for the mind,
+augmenting capacities to participate in the world in specific ways.
+To measure up to the standards of our analogy from human mechanical
+power, a bicycle for the mind must extend root human competencies that
+enable all these specific kinds.  Arguably the work toward a bicycle
+for the mind began with graphical practices such as drawing,
+diagramming, and marking the world with signs.  Durable public symbols
+extend gestural means of directing joint attention, and likely arose
+prior to or in tandem with spoken language constructions which are
+also tools supporting cooperative narrative activities.<sup>3</sup>
+Attempts at language-aware computing have largely failed to
+acknowledge the more fundamental communicative abilities that language
+use extends.
+</p>
+
+<p>
+The printing press, mass media, and the internet have expanded the
+reach of graphical practices, but attentional resources are a
+bottleneck, one historically addressed institutionally.  However, we
+have reached a point where institutions are a bottleneck too.  In
+order for networked individuals to viably maintain situation awareness
+at scale, it is necessary for software to participate in the content
+of information, not merely its mechanical transport and processing.
+Computing tools must be capable of following and augmenting our
+intentional processes.  In other words we need bicycles for the mind.
+The thesis put forward in this document is that by codifying motivated
+selecting, composing, and directing of attention, convention-based
+abstraction can be grounded in situated activities.  The aim is to
+augment situated activities of jointly attending, such that proxy
+agents can follow and participate, assisting in situation awareness
+and sense-making.
+</p>
+
+<p>
+I call this work a "manifesto" because I don't consider it an idle
+theoretical exercise, but instead as advocacy for certain approaches
+and courses of action that are motivated by real problems in society,
+technology, and science.  Alan Kay once remarked that "the best way to
+predict to future is to invent it".  Likewise the best way to make
+sense of history is to excavate from it the most sound basis for the
+direction one is inventing toward.  I survey three major trends
+tracing all the way back to the birth of modern human primates:
+attending, working, and organizing.  Starting with the origins of
+joint attentional scaffolding and following a thread through changes
+that have impacted the scale of attention, work, and social
+organization, I draft a roadmap to an ecology of bicycles for the
+mind.  I have kept references to authors, works, and prior art in the
+endnotes apart from the main text to simplify presentation.
+</p>
+
+</div>
+
+<a name="agents-and-their-environments"></a>
+<div class="page">
+<h3>AGENTS AND THEIR ENVIRONMENTS</h3>
+
+<p>
+Two of the oldest questions in philosophy and science are "what is
+life?" and "what is mind?".  Only a mere 150 years ago<sup>1</sup> did
+it begin to dawn on pragmatic thinkers that these two questions are
+actually one question: "what is an agent?".  To ask what an agent is
+is to ask what the difference is between inert mechanisms and living,
+feeling, self-steering mechanisms.  So the question naturally becomes
+one of feedback and control mechanisms.  Agents are systems that act
+to control parameters of environments that matter to them.  To speak
+of an "environment of" or "mattering to" a system requires a physical
+explanation, and that explanation is given by natural selection.
+Mattering is a consequence of evolution because physico-chemical
+arrangements are either ephemeral or they persist through targeted
+manufacture, maintenance, acquisition of resources, and so on.  To
+persist requires control of factors bearing on persistence, as biases
+or preferences.  In other words, those things matter to the agent--
+whether the agent knows it or not.
+</p>
+
+<p>
+An agent, minimally defined, is a system that exercises control over
+factors ultimately tied to its persistence as an autonomous entity
+over time.  Factors that may be required for the unity of the system
+to endure but are less directly controllable by the agent are called
+the environment of an agent.  It is important to note that up until
+here, when we speak of mattering to an agent it is meant strictly in
+terms of outcomes that can be observed in the functioning of the
+system by an outside observer.  What is called "perception" is an
+agent's active sensitivity to ecological features called affordances
+that bear upon control objectives.  To say affordances matter to an
+agent, is to say that the real outcomes matter (both in terms of
+learning effective habits and in terms of reproduction/survival
+viability), but also to remark on the first-hand experience of
+proactive sensitivity to ecological properties.  This latter aspect
+becomes more sophisticated and pronounced in more complex species.
+</p>
+
+<p>
+Agents' end-directed prospective control can be described in terms of
+three "predicaments" or stages in processes at which different factors
+bear upon action.  Evidence for these predicaments derives from the
+pragmatics of gesture in joint attention, explored further in the next
+chapter.<sup>2</sup> Their efficacy in communication indicates they
+are basic parameters of agency.<sup>3</sup>
+</p>
+
+<ol>
+<li><u>ENGAGING</u>: An agent is situated in environments that affords
+many opportunities and threats demanding awareness and readiness to
+potentially engage promising ends and mitigate perilous eventualities.
+Any engagement has opportunity costs, so an agent must budget
+attention<sup>4</sup> wisely.  <b>The predicament of engaging is that
+of classifying events as indicative of means to valued ends, in
+deciding to engage or not.</b>
+
+<li><u>SUPPORTING</u>: Support, in the sense of contribution of work
+or effort, refers to relationships that hold between a presently
+engaged process and one or more potential or ongoing process of an
+agent. <b>The predicament for the agent is to what extent does the
+work of a secondary engagement contribute to (or hinder) the
+realization of the present enagement's objective, in deciding to
+include in scope or not.</b>  The phenomenon of concentration or focus
+is also expressed by optimally excluding/including supporting or
+subordinate engagement.  The idea of focus is that only those
+supporting processes that contribute to realizing valued ends should
+be involved, and others should be excluded.
+
+<li><u>REALIZING</u>: The third predicament that agents contend with
+is that of organizing final causes. Final causes are those that
+motivate the second predicament above and indirectly, the first as
+well. <b>The predicament is that of defining ends, in deciding to
+continue or exit. What defines the unique character or meaning of
+realized ends is the specific set of options that are available to
+exit to.</b>  In general, positions that offer more options (giving
+the agent more autonomy, rather than being at the mercy of
+circumstance) appear to be favorable, all other things being
+equal.<sup>5</sup>
+</ol>
+</p>
+</div>
+
+<a name="joint-attention-the-human-niche"></a>
+<div class="page">
+<h3>JOINT ATTENTION: THE HUMAN NICHE</h3>
+
+<p>
+Humans are a unique case among natural agents.<sup>1</sup> What
+characterizes the "sapience" of humans, as distinct from the more
+widespread "sentience" of basic agents, is our capacity for narrative,
+content-bearing activities. The cause of this uniqueness is the topic
+of this chapter.  Content or representation is not deep or intrinsic
+to intelligence by any means.  The rich variety of sentient
+intelligence in nature manifests as purely pragmatic capacities of
+agents to steer events toward ends that matter-- solely in terms of
+direct bearing on positioning or readiness, often to the mutual
+benefit of agents.
+</p>
+
+<p>
+Narrative agency is wholly due to a set of evolved capacities
+constituting a cooperative infrastructure of communication that began
+with gesture.<sup>2</sup> The function of gesture is to <b>share
+(engage), follow (support), and direct (realize)</b> flows of
+motivated attending.  These skills allow us to collaboratively develop
+and teach how to act/perceive, by intervening to fine-tune the
+selection, composition, and motivation of decisions of what to attend
+to and why. While other species do engage in joint
+attention<sup>3</sup>, only humans attend to a shared focus and
+coordinate motivation for directing and refining that focus.
+</p>
+
+<p>
+<center><img src="assets/sentience-vs-sapience.png" height="200"></center>
+</p>
+
+<p>
+Joint attention is important for multiple reasons.  One reason is that
+it is directly responsible for human intentionally organized tools and
+practices.  This is because when agents externally coordinate events
+that bear upon engagement, support, and realization, they are defining
+and shaping shared processes of narratively reorganized
+agency.<sup>4</sup> Another reason, a consequence of the first, is the
+development of intersubjectivity: the practices and tools that arise
+in service of joint attention become a rich repository of scaffolding
+that constitutes tacit and explicit common ground supporting the many
+varieties of social interactions.  The accumulation of scaffolding
+offers potentially endless options for agents to extend the reach of
+their world-involving activities in socially sharable ways.  Somewhat
+ironically, social practices establishing content made possible the
+development of autonomous personal "selves" as nexuses of life
+narrative, identity, and "mental" contents.
+</p>
+
+<p>
+The earliest stages of human societies mark the beginnings of a
+history of tools and practices (such as paintings, masks, signs,
+speaking, etc) for scaffolding joint attention.  Scaffolding is still
+by and large a highly localized activity between small groups of
+people, though the coordination of local activities has been
+significantly broadened by technologies of writing, the printing
+press, mass media, and the internet.  Disseminable graphical practices
+such as writing and diagramming exemplify
+how <i>extensive</i><sup>5</sup> sapient agents are: the reach and
+influence of involvement in the world is amplified by distributed
+scaffolding practices. Bicycles for the mind aim to tighten or make
+more immediate these wide feedback loops so as to scale awareness,
+sense-making, and organizational practices.
+</p>
+
+</div>
+
+<a name="the-scalability-of-attention-work-and-social-organization">
+<div class="page">
+<h3>THE SCALABILITY OF ATTENTION, WORK, AND SOCIAL ORGANIZATION</h3>
+<p>
+In the discussion above we've developed an account of narrative agents
+whereby intervening in other agents' attending to three basic
+predicaments of control (by means of gesture and scaffolding), agents
+establish sophisticated narrative sense-making skills and practices.
+The human niche in all of its cultural and psychological diversity has
+been built in this framework of pro-social sensitivity to other
+agents' states of engaging, supporting, and realizing objectives, in
+navigating and negotiating the direction of attention.  From these
+basic control predicaments and their corresponding communicative
+skills and motives arise three categories of human concern at
+different scales.
+</p>
+
+<ol>
+<li><u>ATTENTION</u> Any social unit, however temporary or
+time-extended, and however large or small, is confronted with the need
+for coordination on what merits attention.  Agents develop a shared
+awareness or common involvement in making sense of events as bearing
+on shared concerns.
+<li><u>WORK</u> Any social unit is confronted with the need for ways
+of having effects on the world together. Tools and machines have
+greatly expanded our capacities to work toward objectives.
+Technologies of attention, such as diagramming and notation, serve to
+affect agents' processes of realizing specific ends.
+<li><u>SOCIAL ORGANIZATION</u> Any social unit is confronted with the
+need to coordinate on final causes that constitute "what we want to
+happen".  This can include anything from a preference to avoid places
+with cold temperatures in an outing together, to political causes,
+legal justice rulings, or the incentive structure of a game.
+</ol>
+
+<p>
+<b>Hunter gatherer/tribal society.</b> All evidence suggests that the
+primary original driver of increasingly advanced cooperation amplified
+by joint attention in proto-human primates was the stag hunt.  Big
+game hunting required more than one person's help, and the better they
+coordinated, the better results they got on average.  However early
+human societies did not gather in groups much larger than other
+primates did, because of the limitations of keeping track of one
+another and coordinating collective efforts.  Humans developed
+intentional tools for practical purposes (like spears), and tools and
+practices of attention such as gesture, drama, ritual, painting,
+symbols, and an explosion of cultural artifacts as they began to
+bootstrap their capacities further, scaffolded in this way.  It was in
+this period that people began to tell stories and make sense of nature
+in the best ways they could find to influence their shared fate
+positively.
+</p>
+
+<p>
+<b>Agricultural/hierarchical society.</b> The next major shift in
+human social organization was driven by agriculture.  Permanent
+settlements inhabited by unprecedented numbers of people led to
+increasingly hierarchical social organization to manage bottlenecks of
+attention, work, and governance at scale.  In this period the
+hallmarks of civilization, coins for example (out of the collectible
+and gift exchange practices of forager societies) arose to address
+limitations of personal and collective situation awareness that
+rendered ineffective older established ways of sharing in common
+resource pools.  Mechanical devices and managerial hierarchies were
+developed to address the scale of work.  Heavy-handed monarchies and
+religious institutions addressed problems of coordinating social
+values at scale.
+</p>
+
+<p>
+<b>Information/network society.</b> In the present era we are at the
+beginning of another major shift in the scale of society, from a
+hierarchical civilization to a decentralized network society.  Near
+the end of hierarchical civilization, the human project of
+industrialization culminated in a generalization of efficient work in
+the form of information theory, control theory, and the invention of
+the digital computer.  Networked computers have globalized the
+coordination of mechanical work, enabling ad hoc, easily affordable,
+planetary-scale machinery.  Just as old methods failed us when we
+formed large settlements, the new global and interplanetary scale of
+human interaction necessitates decentralized social organization.
+Beyond developing robust distributed architecture discipline, what is
+needed most is scaling shared situation awareness and organization.
+</p>
+
+</div>
+
+<a name="situated-programming">
+<div class="page">
+<h3>SITUATED PROGRAMMING</h3>
+<p>
+At the traumatic height of the 20th century, cybernetics emerged as a
+bold scientific, technological, and societal program that emphasized
+the engineering of agent mechanisms.  Cybernetics was instrumental in
+the invention and development of computing technology, which it cast
+as a tool for designing and understanding systems organized by
+mechanisms resembling the end-directed processes of natural
+agents. The first high-level programming languages reflected the
+machine and human sides of this project respectively, with languages
+like Fortran focusing on efficient use of machine resources, and
+languages like Lisp and Smalltalk focused on amplifying human
+expressive power.  As time went on and resources grew more abundant,
+Expressively powerful languages became more practical.  Parallel to
+these developments, user bases were expanding, but at the cost of a
+growing divide in power between "programmers" and "users".  Ever since
+that trend started, there has been a tension in computing between
+programming being disconnected with situated use, and use lacking the
+expressive power of programming.  Consequently there have been many
+efforts to make programming more accessible to wider audiences, and/or
+to make situated use as powerful as programming.  The setbacks such
+efforts have faced have been both technical (fundamental challenges in
+interface design, knowledge representation, etc.) and cultural
+(respectability politics in academia and industry, economic factors).
+</p>
+
+<p>
+For a few different reasons, the tide seems close to turning.  Mobile
+and wearable computing is increasingly ubiquitous and we are only a
+couple of years away from affordable consumer augmented reality
+hardware.  That means computing is more frequently applied to
+activities other than just those ones that are best done sitting at a
+desk.  Some of the original cybernetics ideas, namely neural networks
+and agent-based learning have become wildly successful, and there is a
+growing interest in ways of integrating machine learning techniques
+with data-centric approaches to programming. Efforts in industry such
+as robotic process automation are aptly proposing agents as an
+effective user interface model to give users more expressive power.
+The architecture pattern of event-driven dataflow is gaining in
+popularity at the same time that decentralized data provenance
+infrastructure is maturing. Data provenance is the cornerstone of
+decentralized network society, because as computing scales the labor
+dimension of collaborative agency, it becomes necessary to scale
+social accountability with respect to effects and motivations of work.
+Having auditable records is essential to assessing and correcting
+faults, and for learning what works and why, in repeatable ways. Only
+when the systems that extend our agency and act on our behalf are
+sourced with reliable records, can we make sense of them, take
+responsibility for them, and employ them with confidence.
+</p>
+
+<p>
+All of this points to the viability of developing a software ecosystem
+in which open data standards and data in the form of private and
+shared logs of first-class user-instrumented events replaces
+application-internal data silos, potentially providing a great deal of
+data to peers for for training agents that automate processes.  Such
+expression and control can be directly situated in and integrated into
+agents' lived situations.  By specifying agent-centered control as
+data, there is an opportunity for optimization of control, learning
+from past outcomes. While the term <b>situated programming</b> does
+not yet have much currency<sup>1</sup>, it is a very fitting one to
+describe this trend of users gaining more of the power of programming
+and programmers gaining more situational context.
+</p>
+
+<p>
+A final major question is the concern of the next chapter: what
+approach to information would allow software to helpfully participate
+meaningfully in the real situations that human participants control
+together.  In other words how do we build bicycles for the mind?  This
+needs to be a central concern of situated programming, I will argue.
+Scaling social organization requires expanding our capacities to share
+common ground, and common ground is established through the use of
+tools ans and practices for coordinating attending to immediate
+concerns together.
+</p>
+
+</div>
+
+<a name="the-art-of-bicycle-maintenance">
+<div class="page">
+<h3>THE ART OF BICYCLE MAINTENANCE</h3>
+
+<p>
+The proverbial bicycle for the mind can be defined more precisely as
+the minimal instrumentation of joint attentional skills required to
+establish machine-followable common ground.  What I propose as way of
+constructing bicycles for the mind within the broader context of
+situated programming, is an approach to specifying the coordination of
+joint attention, which I call <b>narrative process scaffolding</b>
+(NPS).  I have begun work on the <b>senters</b> protocol (developing
+the specific technical details
+at <a href="http://senters.info"><u>senters.info</u></a>) as a way of
+implementing NPS.  Here I will describe NPS and senters at a high
+level.
+</p>
+
+<p>
+To review what was developed in the discussion above, there are two
+levels of meaning when it comes to agent-centered information.  There
+is basic, first-order causative involvement (direct
+perception/action), and there is second-order convention-based
+(gestural for example) re-organization of first-order activity by
+controlling the selection, composition, and direction of activities of
+attending to the world.  The approach of NPS is to <b>instrument</b>
+activities of direct world-involvement, and to <b>scaffold</b>
+convention-based processes of joint attentional orientation.
+</p>
+
+<center>
+<table>
+<tr>
+<td>
+<img src="assets/senters-information-model.png" height="100">
+</td>
+</tr>
+</table>
+</center>
+
+<p>
+What are called <b>instruments</b> are typically simple functions that
+affect the world, including visual and haptic interactions for
+example. Users instrument their active involvement in environments, in
+an event-driven dataflow<sup>1</sup> style: instruments produce events
+when they are applied, on a feed specific to the agent's use of the
+instrument.  Such events are in turn referred to on feeds for what are
+called <b>centers</b> when the instrumented events are indicated by
+means of <b>gestures</b> as bearing on either the engagement, support,
+or realization of the process that a center scaffolds.  The six
+gesture types cover empirically documented classes of attentional
+bearing: engage or refrain (sharing), follow or voice<sup>2</sup>
+(supporting), and continue or exit (directing/ realizing).  Gestures
+signal the relevance of events to processes of attending toward
+ends. For example an "engage" gesture for an instrumented event on a
+touch interaction with respect to a center for moving an object
+around, would indicate being able to move the object.
+</p>
+
+<center>
+<table>
+<tr>
+<td>
+<img src="assets/development-of-center.png" height="100">
+</td>
+</tr>
+</table>
+</center>
+
+
+</p>
+
+<p>
+This approach allows for moving beyond an application model to an
+approach of drawing on a multitude of finer-grained instruments
+orchestrated in user-defined narrative processes.  Users collectively
+crowd-source and individually leverage effective software behaviors
+custom-tailored to fit real situations.  The phrase "turning the
+application inside out"<sup>3</sup> is a good description of the fact
+that centers (which are defined and shaped through use) replace the
+former role of applications, in capturing what functions are are
+available, how they compose, and where they get their users in the
+end.
+</p>
+
+</div>
+
+<a name="roadmaps">
+<div class="page">
+<h3><u>CENTERS: ROADMAPS FOR BICYCLES FOR THE MIND</u></h3>
+
+<p>
+The scientific hypothesis underwriting the technical proposal for
+narrative process scaffolding is that something we've termed a
+"center" describes and specifies the hard data of convention-based
+guidance of attention, or "scaffolding".  This concept is actually
+quite simple, but is subtle enough to be missed without a careful
+presentation, so this final chapter makes that presentation its
+objective.  The title of the chapter asserts that centers are
+"roadmaps for bicycles of the mind".  Centers are the maps, not the
+territories that are mapped; the territory in this metaphor is the
+continuous flow of situated and embodied direct experience of
+participating in what happens.
+</p>
+
+<p>
+In the following examples I use the descriptor "top-down" for any
+development/use where a center is engaged as scaffolding to direct a
+series of events, and "bottom-up" for development/use where occurrent
+events induce an appropriate center to scaffold contending with and
+making sense of the events.  Also, a word on "development" versus
+"use": use of centers is technically not distinct from enacting
+entirely new centers, as any use of a center revisits its story of
+development, and the record of its process can potentially scaffold a
+future episode of use by someone it is shared with.  There is a
+practical difference of degree rather than kind in leveraging (at one
+extreme) a well-trodden center that one's present experiences add
+nothing new to, and (at the other extreme) a center that has yet to be
+formed with respect to histories of events.
+
+<p>
+<b>Example 1. top-down development and use of centers.</b> Alice, Bob,
+and some of their friends go on a hike and pick a new kind of berries.
+None of them are experts at picking berries.  Alice and Bob
+individually draw from some centers that scaffold foraging generally,
+including picking berries of known varieties. Together the group
+collaborates on the development of centers to scaffold processes of
+acquiring this new kind of berry, benefiting from and refining one
+another’s findings as they progress, sharing with one another what
+works well.
+</p>
+
+<p>
+You have been hiking in the woods for days with no rations, but you
+have a solar charging unit for your wearables. You access the local
+woodland mesh network and find that many foragers have shared
+scaffolding on their techniques.  Your reserves of agents dutifully
+apply these centers to direct your attention to finding berries, and
+other food.  There are also some relatively recently sourced centers
+scaffolding the process of finding a new kind of berry you have never
+heard of, but you don't follow it, because of how few participants
+have contributed, and also because these pseudonomously signed
+strangers (Alice, Bob, and their friends) have made it difficult to
+link their activities to much else.
+</p>
+
+<p>
+<b>Example 2. bottom-up development and use of centers.</b> You are
+sitting outside in front of your home reading a book when suddenly a
+car's screeching brakes break your concentration. A bicyclist flies
+from impact with the vehicle's windshield.  After seeing to it that
+the bicyclist receives medical care, you and the other nearby
+witnesses recount what you witnessed, and develop a consistent
+account, pooling pieces of recorded evidence, acts of claim-making
+(witnesses', the artificial driver agent's, the bicyclist's) to create
+a content-bearing executable narrative that explains, in a process of
+joint attentional replay what transpired.  It is accepted and applied
+as the basis of a "smart contract" insurance payout.
+</p>
+
+<p>
+<b>~ EPILOGUE ~</b>
+</p>
+
+<p>
+As these examples show, centers are histories of instrumented events
+directed by joint attentional guidance.  Skillfully engaging centers
+means being able to use them to scaffold novel circumstances they
+apply to, following them through in episodes of attending toward
+realized outcomes.  Many new ecologies of bicycles of the embodied
+mind can be discovered as we share, develop, and use these maps to
+experiencing them together.
+</p>
+
+</div>
+
+<a name="endnotes">
+<div class="page">
+<h3><u>ENDNOTES</u></h3>
+</a>
+<span class="endnote">
+<p>
+<b>preface:</b>
+<b>1.</b> To the best of my knowledge, the first documented occurrence
+of the turn of phrase was in a 1980 presentation by Apple Computer
+co-founder Steve Jobs on using computers to amplify human abilities.
+In so doing he paid homage to a key theme of the cybernetic movement
+that gave birth to computers.  The title of this manifesto combines
+this phrase with a reference to "Steps to an Ecology of Mind" by
+cyberneticist Gregory Bateson, which explored the organization of
+individuals, societies, and ecosystems in terms feedback and adaptive
+self-regulation. <b>2.</b> In addition to bicycles standing for a
+close fit between humans and technological extension, bicycles have
+other fitting associations.  Bicycles influence urban planning toward
+human-centered designs. They have historically stood for liberation
+and empowerment, playing a significant role in feminism. Susan
+B. Anthony wrote of the bicycle: "it has done more to emancipate women
+than anything else in the world. I stand and rejoice every time I see
+a woman ride by on a wheel." <b>3.</b>  Spoken language, by any
+account a crowning achievement of our species (innateness debates
+aside), is supported by image schematic and metaphorical devices for
+coordinating construal of abstract domains (Lakoff 1993, Talmy 2000,
+Goldberg 2003).  The use of these devices is so entrenched in cultural
+practice that our use presents a task of unraveling mysteries for
+years to come in cognitive linguistics research.
+
+</p>
+<p>
+<b>agents:</b>
+<b>1.</b> Roughly 150 years ago a revolution in evolutionary theory
+occurred, most notably punctuated by Darwin's "On the Origin of
+Species". In that setting, the "pragmatic turn" in philosophy and
+science began with Charles Sanders Peirce's project of reconstituting
+knowledge, meaning, and phenomenology in terms of situated agents
+calibrating meanings externally in networks of causative consequence.
+The pragmatic thread can be traced through the work of Uexkull,
+Vygotsky, later Wittgenstein, Heidegger, Merleau-Ponty and many
+others.  Crucially it led to the 1st and 2nd cybernetics movements,
+the latter of which in conjunction with James and Eleanor Gibson's
+pioneering work in ecological psychology has developed into the
+"e-turn" or "4E" (embodied, ecological, enactive, and extensive)
+cognitive sciences.  The underlying theoretical basis of semiotics
+(Peircean, not Sassurian), cybernetics, and radical embodied cognitive
+science is that meaning happens in the world, relative to the
+predicaments of agents, and as such must be understood in terms of
+processes of agents' involvement in the world over time. <b>2.</b> The
+assertion that agents are necessarily and sufficiently defined on
+three dimensions of situated bearing is mainly based on the work of
+Michael Tomasello, Adele Goldberg, and other related work in their
+usage-based program of communication research.  This research has
+identified three ways in which humans learn (around nine months of
+age) to intervene in others' processes of attending: sharing,
+following into, and directing processes of attending.  These three
+skills of attention are directly related to three identified
+communicative motives of sharing, informing (supporting), and
+requesting (directing) process.  These appear to be constitutive
+factors of the human semantic niche of specifying shared intention.
+In this manifesto I have taken the speculative liberty of
+extrapolating the historical themes of attention, work, and
+organization from these communicative skills or motives, as it seems
+to carry its explanatory weight. <b>3.</b> Turvey 1992 also supports
+this account of prospective awareness, supporting subacts, and
+afforded ends.  <b>4.</b> Eleanor Gibson and Nancy Rader in
+"Attention: The Perceiver as Performer" (1979) explain that it would
+be misleading to regard attention as a special mechanism to be
+studied, and is more appropriately understood to be the activities of
+the perceiver-actor.  Attending is simply the conduct of
+world-involving, end-directed activity.  The word is however useful in
+pointing out that an agent must prioritize what to engage in, at the
+cost of engaging in some other activity. The word becomes more of a
+reference to a distinctive phenomenon in the discussion of joint
+attention, the phenomenon of agents' states of attending being made
+targets of attention in their own right, to be influenced and
+organized.  <b>5.</b> A case for maximizing potential next options as
+a default utility function for intrinsic motivation was first made by
+Klyubin, Polani, and Nehaniv 2005, which they term "empowerment",
+quantifying it in information-theoretic terms as the channel capacity
+of an agent's actuation channel terminating at the sensor.
+
+</p>
+<p>
+<b>joint attention:</b>
+<b>1.</b> Alva Noe argues persuasively in "Strange Tools: Art and
+Human Nature" (p. 65-66) that humans are a class of natural being
+distinct from animal species.  <b>2.</b>  Michael Tomasello's research
+over several decades shows that directing the flow and focus of
+others' attention in service of cooperative organization is the reason
+we direct the flow, focus, and organization our own world-involving
+activities. Basic ecological dynamics cannot be equivocated with the
+reflective reorganizational process of developing the what, how, and
+why of activity developed from from skills of joint attention.  Some
+related work that builds this case for a duplex account of sapient
+intelligence are Hutto and Myin's "Radicalizing Enactivism" and
+"Evolving Enactivism", Chapman and Agre's "Abstract Reasoning as
+Emergent from Concrete Activity", Alva Noe's "Strange Tools", Nancy
+Salay's "Representation: Problems and Solutions", and Sabrina
+Golonka's "Laws and conventions in language‐related behaviors".
+Importantly, all of this work acknowledges that this duplex account is
+usage-based, at the level of embodied agents situated in the world
+together. Representational content is achieved by agents by means of
+the tools and practices they use to scaffold jointly
+attending. <b>3.</b> Ape gestures include "intention movements"
+(abbreviated actions that have effects within social contexts) and
+"attention getters" (actions that call attention, such as slapping the
+ground).  Perhaps surprisingly, dogs (having had some time to adapt to
+our cognitive niche) have experimentally shown far better
+understanding of human pro-social intentions and gestures such as
+pointing than other animals (Kirchhofer, et al). <b>4.</b> The use of
+the term "narratively reorganized agency" refers to what is discussed
+in the first endnote of this section.  Narrative process is a kind of
+feedback process concerned specifically with the selection,
+composition, and direction of what is attended to.  As such, it is a
+second-order mode of end-directed feedback that is convention-based
+rather than law-based in its relation to ecological
+information.  <b>5.</b>  As Tracy Harms puts it, "mind, as cognitive
+scientists and philosophers focused on human flexibility are most
+interested, is characterized by an expanse of reorganizational
+fluidity." Hutto et al (2014), on the limits of this extent write
+"limits can be revealed by empirical experiment. Even if one were able
+to see for miles one might not be able to see for leagues."
+
+</p>
+<p>
+<b>situated programming:</b>
+<b>1.</b> William Clancey explored "situated action" in the context of
+computing in his influential 1997 book "Situated Cognition: On Human
+Knowledge and Computer Representation". In 2002, Mills and Scholtz
+published "Situated Computing: The Next Frontier for HCI Research",
+exploring the reorientation to a data-first, agent-centered approach
+to computing brought about by mobile and wearable devices.  They
+write, "a future where people will interact with information through a
+continuously varying array of devices that combine to form ad hoc
+portals suitable to particular situations. In such a future, people
+and information will be emancipated."  The term "situated programming"
+was used by Rich Hickey in his keynote lecture at Clojure Conj 2017,
+emphasizing effective programs, the importance of developing meaning
+at the systems level rather than fixating on machine-level program
+abstraction, and the agent-centered design of systems.
+
+</p>
+<p>
+<b>bicycle maintenance:</b>
+<b>1.</b> Dominic Tarr's secure scuttlebutt protocol (ssb) is an
+example of the sort of approach I have in mind.  It applies the kappa
+architecture or event-driven dataflow programming at the user level,
+and for that reason it is a good fit for NPS.  Further
+implementation-level concerns are explored in the senters
+RFC. <b>2.</b> The use of "follow" and "voice" is a reference to the
+notion of "voice and exit".  In the context of the support predicament
+of a narrative process, some other process can either be followed as
+supporting, or voiced as not supporting.  In the realization
+predicament of a narrative process, "continue" and "exit"
+apply. <b>3.</b> To paraphrase Martin Kleppman's "turning the database
+inside out" in reference to event sourcing.
+</span>
+</div>
+</body>
+</html>

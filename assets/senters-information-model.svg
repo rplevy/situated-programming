@@ -21,6 +21,34 @@
     <marker
        inkscape:isstock="true"
        style="overflow:visible"
+       id="marker11314"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path11316" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="marker11268"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path11270"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
        id="marker7732"
        refX="0.0"
        refY="0.0"
@@ -31,50 +59,6 @@
          style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
          d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
          id="path7734" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker7348"
-       refX="0.0"
-       refY="0.0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lstart">
-      <path
-         transform="scale(0.8) translate(12.5,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path7350" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow1Lstart"
-       orient="auto"
-       refY="0.0"
-       refX="0.0"
-       id="marker7048"
-       style="overflow:visible"
-       inkscape:isstock="true"
-       inkscape:collect="always">
-      <path
-         id="path7050"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         transform="scale(0.8) translate(12.5,0)" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker5507"
-       refX="0.0"
-       refY="0.0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lstart"
-       inkscape:collect="always">
-      <path
-         transform="scale(0.8) translate(12.5,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
-         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
-         id="path5509" />
     </marker>
     <marker
        inkscape:stockid="Arrow1Lstart"
@@ -113,9 +97,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.48219683"
-     inkscape:cx="1271.1569"
-     inkscape:cy="300.10898"
+     inkscape:zoom="0.49066349"
+     inkscape:cx="1135.0538"
+     inkscape:cy="18.121879"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -133,7 +117,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -143,161 +127,144 @@
      id="layer1"
      transform="translate(0,-698.0315)">
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:8.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8.5, 68;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.5000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:10.00000038,20.00000076;stroke-dashoffset:0;stroke-opacity:1"
        d="m 42.857143,870.36222 c 2388.571457,0 2388.571457,-2.85714 2388.571457,-2.85714 l 2.8571,0"
        id="path3973"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="48.285713"
-       y="824.07648"
+       x="71.737228"
+       y="780.07648"
        id="text4775"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4777"
-         x="48.285713"
-         y="824.07648"
+         x="71.737228"
+         y="780.07648"
          style="font-size:40px">SCAFFOLDING</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text4779"
-       y="945.07648"
-       x="45.285713"
+       y="963.07648"
+       x="45.233322"
        style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
          style="font-size:40px"
-         y="945.07648"
-         x="45.285713"
+         y="963.07648"
+         x="45.233322"
          id="tspan4781"
          sodipodi:role="line">INSTRUMENTING</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="507"
-       y="969.36224"
+       x="726"
+       y="985.36224"
        id="text4783"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4785"
-         x="507"
-         y="969.36224">Alice: instrument with i1: event1, event2, event3...</tspan></text>
+         x="726"
+         y="985.36224">Alice: instruments event</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="506"
-       y="765.36224"
+       x="726"
+       y="759.72601"
        id="text4787"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4789"
-         x="506"
-         y="765.36224">Alice: engage i1 in c1 </tspan></text>
+         x="726"
+         y="759.72601">Alice: gestures event as</tspan><tspan
+         sodipodi:role="line"
+         x="726"
+         y="790.97601"
+         id="tspan11712">         engaging center</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text4791"
-       y="922.71552"
-       x="1143.968"
+       y="984.34003"
+       x="1760.7803"
        style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         y="922.71552"
-         x="1143.968"
+         y="984.34003"
+         x="1760.7803"
          id="tspan4793"
-         sodipodi:role="line">Bob: instrument with i1: event1, event2, event3...</tspan></text>
+         sodipodi:role="line">Bob: instruments event</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="867.80231"
-       y="825.12897"
+       x="1760.7803"
+       y="759.72601"
        id="text4795"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4797"
-         x="867.80231"
-         y="825.12897">Bob: engage i1 in c1 </tspan></text>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart)"
-       d="m 627.31701,927.33288 c 0,-146.37397 0,-147.98248 0,-147.98248 l 0,0"
-       id="path4799"
-       inkscape:connector-curvature="0" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path5505"
-       d="m 858.39339,807.73668 c -61.52995,-45.44175 -62.20611,-45.94111 -62.20611,-45.94111 l 0,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.54897994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker5507)" />
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.51519531px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker7048)"
-       d="m 1164.0831,889.80731 c -50.5439,-48.7195 -51.0994,-49.25488 -51.0994,-49.25488 l 0,0"
-       id="path7046"
-       inkscape:connector-curvature="0" />
+         x="1760.7803"
+         y="759.72601">Bob: gestures event as</tspan><tspan
+         sodipodi:role="line"
+         x="1760.7803"
+         y="790.97601"
+         id="tspan11766">        engaging center </tspan></text>
     <path
        inkscape:connector-curvature="0"
        id="path7346"
-       d="m 648.74665,779.49597 c 0,146.37397 0,147.98248 0,147.98248 l 0,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker7348)" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path7730"
-       d="m 1145.906,840.02333 c 48.7195,50.5439 49.2548,51.0994 49.2548,51.0994 l 0,0"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.51519531px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker7732)" />
+       d="m 872.74665,817.64312 c 0,124.54132 0,125.90991 0,125.90991 l 0,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92241168px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#marker11268)" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="49.727318"
-       y="1018.8901"
+       x="48.376633"
+       y="998.89008"
        id="text7892"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7894"
-         x="49.727318"
-         y="1018.8901">(direct perception/action)</tspan></text>
+         x="48.376633"
+         y="998.89008">of direct perception/action</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="76.552841"
-       y="743.95447"
+       x="109.28972"
+       y="807.95447"
        id="text7896"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7898"
-         x="76.552841"
-         y="743.95447">(joint attention)</tspan></text>
+         x="109.28972"
+         y="807.95447">of joint attention</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path10198"
+       d="m 1901.4633,943.53747 c 0,-128.48879 0,-129.90077 0,-129.90077 l 0,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.93691611px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart)" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.11312461;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 1064.5634,769.76849 652.2173,-0.091 0,0"
+       id="path10202"
+       inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="1911.6534"
-       y="971.93695"
-       id="text7900"
+       x="1105.0875"
+       y="759.06439"
+       id="text10798"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan7902"
-         x="1911.6534"
-         y="971.93695">(Many other instrumented events...)</tspan></text>
+         id="tspan10800"
+         x="1105.0875"
+         y="759.06439">coordination of attending via gestured center</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="1756.1624"
-       y="782.76276"
-       id="text7904"
+       x="853.94574"
+       y="913.77435"
+       id="text11708"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan7906"
-         x="1756.1624"
-         y="782.76276">(Many other gestures engaging/shaping centers)</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="998.34277"
-       y="732.99054"
-       id="text7908"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan7910"
-         x="998.34277"
-         y="732.99054">C1 is a center scaffolding some process</tspan><tspan
-         sodipodi:role="line"
-         x="998.34277"
-         y="764.24054"
-         id="tspan7912">Alice and Bob are actively engaging that center</tspan></text>
+         id="tspan11710"
+         x="853.94574"
+         y="913.77435" /></text>
   </g>
 </svg>
